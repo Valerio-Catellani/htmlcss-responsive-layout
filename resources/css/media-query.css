@@ -86,6 +86,91 @@
     top: 0;
     left: 130px;
     font-size: 15em;
+  }
 
+  /*GET-STARTED + FOOTER*/
+  #get-started .content-container,
+  footer .content-container {
+    max-width: 800px;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .content-container {
+    max-width: 1200px;
+  }
+
+  /*HEADER*/
+
+  header nav .fa-bars {
+    display: none
+  }
+
+  header nav ul {
+    display: block;
+    position: relative;
+    width: auto;
+  }
+
+  header nav ul li {
+    display: inline;
+    margin: 0 5px 0 0
+  }
+
+  header nav ul li:last-child {
+    background-color: white;
+  }
+
+  header nav ul li:last-child a {
+    color: black;
+  }
+
+  /*INFO*/
+  #info .content-container .card:first-child {
+    display: flex;
+  }
+
+  #info .content-container .card:first-child .img-container {
+    width: 50%;
+    align-self: flex-end;
+    padding: 0;
+  }
+
+  #info .content-container .card:first-child .text-container {
+    width: 50%;
+  }
+
+  #info .content-container .card:first-child .text-container h3 {
+    font-size: 1.8em;
+  }
+
+  #info .content-container .card:first-child .text-container span {
+    font-size: 1.4em;
+  }
+
+  /*CUSTOM-APP*/
+
+  #custom-app .content-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  #custom-app .content-container .card {
+    width: calc((100% - 30px) / 2)
+  }
+
+  #custom-app .content-container .card:nth-child(2) .img-container {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #custom-app .content-container .card h2 {
+    font-size: 3em;
   }
 }

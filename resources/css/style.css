@@ -150,6 +150,9 @@ header ul {
   color: var(--color-section2-main);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: var(--color-button1);
+  position: absolute;
+  display: none;
 }
 
 nav:hover ul {
@@ -187,7 +190,8 @@ main img {
 /************ INFO ************/
 
 #info {
-  margin-top: 70px;
+  margin-top: 90px;
+  padding-top: 20px;
   /*Compensa la dimensione della navbar*/
 }
 
@@ -250,3 +254,5 @@ main img {
 #about-us .content-container .text-container .responsive-layout-button {
   padding: 15px 20px;
 }
+
+/************ GET STARTED ************/
