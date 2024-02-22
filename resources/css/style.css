@@ -126,7 +126,7 @@ header {
 }
 
 header .content-container {
-  padding: 20px
+  padding: 20px 30px
 }
 
 ul {
@@ -142,7 +142,7 @@ nav:hover ul {
 
 .content-container {
   max-width: 576px;
-  padding: 40px 20px;
+  padding: 40px 30px;
 }
 
 main img {
@@ -164,7 +164,7 @@ main img {
 }
 
 
-#info .content-container .card:first-child span {
+.letter-spacing-3 {
   letter-spacing: 3px;
 }
 
@@ -187,4 +187,15 @@ main img {
   margin: 40px 0;
   width: 65%;
   aspect-ratio: 1 / 1;
+}
+
+/************ WORK WITH US ************/
+#work-with-us h2 {
+  padding-bottom: 40px;
+}
+
+#work-with-us .card-container .card h4 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
 }
