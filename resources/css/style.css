@@ -62,6 +62,7 @@
 .responsive-layout-button {
   padding: 15px 70px;
   border-radius: 50px;
+  margin: 20px;
 }
 
 .responsive-layout-button:hover {
@@ -75,9 +76,29 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+h3 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+h3,
+p,
+.img-container {
+  padding: 20px;
+}
+
 .small-border {
   border-radius: 30px;
 }
+
+.big-border {
+  border-radius: 60px;
+}
+
 
 
 /***************  HEADER   ********************/
@@ -97,12 +118,13 @@ nav:hover ul {
   display: block;
 }
 
-/**** MAIN ****/
+/*************************** MAIN *************************/
 
 .content-container {
   max-width: 576px;
-  padding: 20px;
+  padding: 40px 20px;
 }
+
 
 /************ INFO ************/
 
@@ -112,14 +134,24 @@ nav:hover ul {
 }
 
 
-#info .content-container .card:first-child {
+#info .content-container .card:first-child,
+#info .content-container .card:first-child .img-container {
   padding-bottom: 0;
 }
 
-#info .text-container>* {
-  margin-bottom: 40px;
-}
 
 #info .content-container .card:first-child span {
   letter-spacing: 3px;
+}
+
+
+/************ CUSTOM APP ************/
+
+#custom-app .card span {
+  width: 100px;
+  aspect-ratio: 1 / 1;
+  line-height: 100px;
+  border-radius: 50%;
+  background-color: var(--color-button2);
+  display: inline-block;
 }
