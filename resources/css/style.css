@@ -76,17 +76,22 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+h2,
 h3 {
   font-size: 2.5em;
   font-weight: bold;
 }
 
-p {
+p,
+h4 {
   font-size: 1.5em;
 }
 
+h2,
 h3,
+h4,
 p,
+.card,
 .img-container {
   padding: 20px;
 }
@@ -99,6 +104,17 @@ p,
   border-radius: 60px;
 }
 
+.circle-border {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.circle-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 
 /***************  HEADER   ********************/
@@ -107,6 +123,10 @@ header {
   top: 0;
   left: 0;
   height: 80px;
+}
+
+header .content-container {
+  padding: 20px
 }
 
 ul {
@@ -125,6 +145,10 @@ nav:hover ul {
   padding: 40px 20px;
 }
 
+main img {
+  width: 100%;
+  display: block;
+}
 
 /************ INFO ************/
 
@@ -154,4 +178,13 @@ nav:hover ul {
   border-radius: 50%;
   background-color: var(--color-button2);
   display: inline-block;
+}
+
+/************ TESTIMONIALS ************/
+
+#testimonials .card .img-container {
+  padding: 0;
+  margin: 40px 0;
+  width: 65%;
+  aspect-ratio: 1 / 1;
 }
