@@ -6,6 +6,7 @@
   --color-button2: #9792e4;
   --color-footer: #333333;
   --color-section2-main: #ffffff;
+  --color-call-to-action: #FEC25D;
 }
 
 .background-color-navbar {
@@ -54,6 +55,10 @@
 
 .color-section2-main {
   color: var(--color-section2-main);
+}
+
+.color-call-to-action {
+  color: var(--color-call-to-action);
 }
 
 
@@ -132,20 +137,42 @@ header .content-container {
   padding: 20px 30px
 }
 
-ul {
-  top: 15px;
+header ul {
+  top: 0;
   right: 0;
+  width: 300px;
+  color: var(--color-section2-main);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 nav:hover ul {
   display: block;
 }
 
+header ul li {
+  color: var(--color-section2-main);
+  font-size: 1.5em;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+header ul li:hover {
+  background-color: var(--color-call-to-action);
+
+  transition: 0.5s;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 3px;
+}
+
 /*************************** MAIN *************************/
 
-.content-container {
+main .content-container {
   max-width: 576px;
-  padding: 40px 30px;
+  padding: 60px 30px;
 }
 
 main img {
@@ -166,10 +193,12 @@ main img {
   padding-bottom: 0;
 }
 
-
-.letter-spacing-3 {
-  letter-spacing: 3px;
+#info .content-container .card .text-container .card-icon {
+  font-size: 8em;
+  padding-top: 30px;
+  color: var(--color-button1);
 }
+
 
 
 /************ CUSTOM APP ************/
