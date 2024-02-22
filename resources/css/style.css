@@ -105,6 +105,8 @@ p,
 }
 
 .circle-border {
+  padding: 0;
+  margin: 40px 20px;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -123,6 +125,7 @@ header {
   top: 0;
   left: 0;
   height: 80px;
+  z-index: 1000;
 }
 
 header .content-container {
@@ -183,8 +186,6 @@ main img {
 /************ TESTIMONIALS ************/
 
 #testimonials .card .img-container {
-  padding: 0;
-  margin: 40px 0;
   width: 65%;
   aspect-ratio: 1 / 1;
 }
@@ -197,5 +198,18 @@ main img {
 #work-with-us .card-container .card h4 {
   padding-top: 0px;
   padding-bottom: 0px;
+}
 
+/************ ABOUT US ************/
+
+#about-us .content-container .text-container .img-container {
+  width: 50%;
+}
+
+#about-us .content-container .text-container .open-quote {
+  font-size: 20em;
+  color: var(--color-section-main);
+  position: absolute;
+  top: -40px;
+  right: 40%;
 }
