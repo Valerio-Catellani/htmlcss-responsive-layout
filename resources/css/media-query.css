@@ -23,3 +23,69 @@
 @media all and (max-width: 768px) {}
 
 @media all and (max-width: 576px) {} */
+
+
+@media screen and (min-width: 992px) {
+  .content-container {
+    max-width: 992px;
+  }
+
+  h2 {
+    font-size: 5em;
+  }
+
+  /* INFO */
+
+  #info .content-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #info .content-container .card {
+    width: calc((100% - 120px) / 3)
+  }
+
+  #info .content-container .card:first-child {
+    width: calc(((100% - 80px) / 3) * 2)
+  }
+
+  #info .content-container .card:first-child .img-container {
+    width: 60%;
+
+  }
+
+  /*CUSTOM-APP*/
+
+  /*TESTIMONIALS*/
+
+  #testimonials .card {
+    flex-direction: row;
+  }
+
+  #testimonials .card .text-container {
+    text-align: left;
+  }
+
+  /*WORK-WITH-US*/
+
+  #work-with-us .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #work-with-us .card-container .card {
+    width: calc((100% - 30px) / 2);
+  }
+
+  /*ABOUT-US*/
+  #about-us .content-container {
+    flex-direction: row;
+  }
+
+  #about-us .content-container .text-container .open-quote {
+    top: 0;
+    left: 130px;
+    font-size: 15em;
+
+  }
+}

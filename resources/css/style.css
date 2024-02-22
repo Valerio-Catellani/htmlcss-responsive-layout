@@ -64,26 +64,20 @@
 
 /**************  DOCUMENT    *********************/
 
-.responsive-layout-button {
-  padding: 15px 70px;
-  border-radius: 50px;
-  margin: 20px;
-}
-
-.responsive-layout-button:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  transition: 1s;
-}
 
 body {
   color: black;
   font-family: "PT Sans", sans-serif;
+  font-size: 100%;
+}
+
+.content-container {
+  max-width: 576px;
 }
 
 h2,
 h3 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
 }
 
@@ -123,6 +117,18 @@ p,
   object-position: center;
 }
 
+.responsive-layout-button {
+  padding: 15px 70px;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.responsive-layout-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 1s;
+}
+
 
 /***************  HEADER   ********************/
 
@@ -160,7 +166,6 @@ header ul li {
 
 header ul li:hover {
   background-color: var(--color-call-to-action);
-
   transition: 0.5s;
 }
 
@@ -171,7 +176,6 @@ header ul li:hover {
 /*************************** MAIN *************************/
 
 main .content-container {
-  max-width: 576px;
   padding: 60px 30px;
 }
 
@@ -194,7 +198,7 @@ main img {
 }
 
 #info .content-container .card .text-container .card-icon {
-  font-size: 8em;
+  font-size: 6em;
   padding-top: 30px;
   color: var(--color-button1);
 }
@@ -241,4 +245,8 @@ main img {
   position: absolute;
   top: -40px;
   right: 40%;
+}
+
+#about-us .content-container .text-container .responsive-layout-button {
+  padding: 15px 20px;
 }
