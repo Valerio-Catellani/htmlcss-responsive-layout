@@ -102,9 +102,10 @@
 
 
 @media screen and (min-width: 1200px) {
-  .content-container {
+  main .content-container {
     max-width: 1160px;
   }
+
 
   /*HEADER*/
 
@@ -151,14 +152,16 @@
   }
 
   #info .content-container .card:first-child .text-container span {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   /*CUSTOM-APP*/
 
   #custom-app .content-container {
+    max-width: 1000px;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: center;
   }
 
   #custom-app .content-container .card {
